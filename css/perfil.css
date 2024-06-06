@@ -1,11 +1,3 @@
-/*reset geral*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-}
-
 
 /*dividindo a div principal em dois lados*/
 .wrapper {
@@ -13,9 +5,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 800px;
+  max-width: 50%;
   display: flex;
   box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+  flex-wrap: wrap;
 
 }
 
@@ -56,7 +49,7 @@
 
 }
 
-/*estilizando a div direita geral (em cima e embaixo)*/
+/*estilizando a div direita geral (parte informações e projetos)*/
 .wrapper .right {
   width: 65%;
   background: #51614e;
@@ -96,8 +89,7 @@
 .wrapper .right .data p {
   font-size: 14px;
   margin-bottom: 10px;
-  color: black;
-  
+  color: #000000;  
 }
 
 /*estilizando as tags de redes sociais*/
@@ -148,3 +140,18 @@
   background-color: #51614e;
 }
 
+/*Tornando Responsivo - Tela Maior*/
+@media screen and (max-width: 900px) {
+  .wrapper .left .right{
+
+  grid-template-columns: repeat(2, 1fr);    
+  }
+}
+
+/*Tornando Responsivo - Tela Menor*/
+@media screen and (max-width: 768px) {
+  .wrapper .left .right{
+
+  grid-template-columns: 1fr;    
+  }
+}
