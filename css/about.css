@@ -1,76 +1,13 @@
-/*reset css*/
-body, ul, li, p {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    font-size: 1.2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-sizing: border-box;
-}
-
-
 body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #f6f6f6;
 }
 
 img {
     max-width: 100%;
     display: block;
 }
-
-/* estilizando o rodape */
-footer, footer p {
-    background-color: #51614e;
-    
-    color: #e6d5a9;
-    margin-top: auto;
-    min-height: 30px;
-    max-width: 100%;
-    padding: 5px;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-  
-/*estilizando o cabeçalho*/
-.header {
-    background-color: #51614e;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    min-height: 50px;
-}
-
-/* arrumando o menu */
-.menu {
-    display: flex;
-}
-
-.menu li {
-    margin-left: 10px;
-}
-
-.menu li a {
-    display: block;
-    padding: 10px;
-    color: #e6d5a9;
-}
-
-/* redimensionando a imagem da logo */
-.logo {
-    min-width: 100px;
-    max-width: 200px;
-}
-
-
-/*estilizando os div principais*/
 
 /*Estilizando o Texto Introdutório*/
 .team-section{
@@ -104,7 +41,7 @@ footer, footer p {
     margin: 30px 0px;
 }
 
-/*Dividindo em 3 card principais*/
+/*Dividindo e estilizando os 3 cards principais*/
 .team-section .container .team-card{
     width: 100%;
     display: grid;
@@ -138,12 +75,6 @@ footer, footer p {
     flex-wrap: wrap;
 }
 
-h4 {
-    text-align: center;
-    margin-top: 10px;
-    max-width: 150px;
-}
-
 .image-section img{
     width: 150px;
     height: 150px;
@@ -153,6 +84,12 @@ h4 {
 
 .image-section div{    
     margin: 0 10px;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 10px;
+    max-width: 150px;
 }
 
 /*Estilizando Cards Missão e App*/
